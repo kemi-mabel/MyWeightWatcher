@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		CE5948A62558524F00A2721D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5948A52558524F00A2721D /* AppDelegate.swift */; };
 		CE5948A82558524F00A2721D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5948A72558524F00A2721D /* SceneDelegate.swift */; };
-		CE5948AA2558524F00A2721D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5948A92558524F00A2721D /* ViewController.swift */; };
 		CE5948AD2558524F00A2721D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5948AB2558524F00A2721D /* Main.storyboard */; };
 		CE5948AF2558525600A2721D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5948AE2558525600A2721D /* Assets.xcassets */; };
 		CE5948B22558525600A2721D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5948B02558525600A2721D /* LaunchScreen.storyboard */; };
 		CE5948BD2558525600A2721D /* MyWeightWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5948BC2558525600A2721D /* MyWeightWatcherTests.swift */; };
 		CE5948C82558525600A2721D /* MyWeightWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5948C72558525600A2721D /* MyWeightWatcherUITests.swift */; };
+		CE5948E225585D9300A2721D /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5948E125585D9300A2721D /* BMIViewController.swift */; };
+		CE5948ED2558724500A2721D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5948EC2558724500A2721D /* SecondViewController.swift */; };
+		CE5948F825588B7B00A2721D /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5948F725588B7B00A2721D /* CalculatorBrain.swift */; };
+		CE59492025615FC300A2721D /* bmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59491F25615FC300A2721D /* bmi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		CE5948A22558524F00A2721D /* MyWeightWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeightWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5948A52558524F00A2721D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5948A72558524F00A2721D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE5948A92558524F00A2721D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE5948AC2558524F00A2721D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE5948AE2558525600A2721D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5948B12558525600A2721D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		CE5948C32558525600A2721D /* MyWeightWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeightWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5948C72558525600A2721D /* MyWeightWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeightWatcherUITests.swift; sourceTree = "<group>"; };
 		CE5948C92558525600A2721D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5948E125585D9300A2721D /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		CE5948EC2558724500A2721D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CE5948F725588B7B00A2721D /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		CE59491F25615FC300A2721D /* bmi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bmi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,11 @@
 		CE5948A42558524F00A2721D /* MyWeightWatcher */ = {
 			isa = PBXGroup;
 			children = (
+				CE5948F625587DBB00A2721D /* Controller */,
+				CE5948F425587DA400A2721D /* Model */,
+				CE5948F525587DAC00A2721D /* View */,
 				CE5948A52558524F00A2721D /* AppDelegate.swift */,
 				CE5948A72558524F00A2721D /* SceneDelegate.swift */,
-				CE5948A92558524F00A2721D /* ViewController.swift */,
-				CE5948AB2558524F00A2721D /* Main.storyboard */,
 				CE5948AE2558525600A2721D /* Assets.xcassets */,
 				CE5948B02558525600A2721D /* LaunchScreen.storyboard */,
 				CE5948B32558525600A2721D /* Info.plist */,
@@ -126,6 +133,32 @@
 				CE5948C92558525600A2721D /* Info.plist */,
 			);
 			path = MyWeightWatcherUITests;
+			sourceTree = "<group>";
+		};
+		CE5948F425587DA400A2721D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE5948F725588B7B00A2721D /* CalculatorBrain.swift */,
+				CE59491F25615FC300A2721D /* bmi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE5948F525587DAC00A2721D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5948AB2558524F00A2721D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5948F625587DBB00A2721D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE5948E125585D9300A2721D /* BMIViewController.swift */,
+				CE5948EC2558724500A2721D /* SecondViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5948AA2558524F00A2721D /* ViewController.swift in Sources */,
+				CE5948ED2558724500A2721D /* SecondViewController.swift in Sources */,
+				CE5948E225585D9300A2721D /* BMIViewController.swift in Sources */,
+				CE59492025615FC300A2721D /* bmi.swift in Sources */,
 				CE5948A62558524F00A2721D /* AppDelegate.swift in Sources */,
+				CE5948F825588B7B00A2721D /* CalculatorBrain.swift in Sources */,
 				CE5948A82558524F00A2721D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
